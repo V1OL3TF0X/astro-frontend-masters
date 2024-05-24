@@ -7,4 +7,5 @@ import solidJs from '@astrojs/solid-js';
 export default defineConfig({
   site: 'https://astro-frontend-masters.netlify.app',
   integrations: [react({ include: ['**/components/react/**/*'] }), solidJs({ include: ['**/components/solid/**/*'] })],
+  output: 'hybrid',
 });
